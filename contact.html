@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me!</title>
+  </head>
+  <body>
+  <nav>
+       <ul>
+         <li><a href="contact.html" class="current-page">Home</a></li>
+         <li><a href="index.html">All About Me!</a></li>
+       </ul>
+    </nav>
+    <main>
+    <h1>Use this form to contact me!</h1>
+    <form
+     action="https://formspree.io/sujunqt@gmail.com" 
+     method="POST"
+    >
+    <div class="form-input">
+        <label for="your-name">Your Name</label>
+        <input id="your-name" type="text" name="your-name">
+    </div>
+    <div class="form-input">
+        <label for="your message">Your Message</label>
+        <textarea
+            id="your-message"
+            type="text"
+            name="your-message"
+            cols="100"
+            vol="100"
+        ></textarea>
+    </div>
+    <button type="submit">Send</button>
+    <input type="reset">
+    </form>
+  </main>
+  </body>
+  </html>
