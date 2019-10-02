@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tell Me More</title>
+  </head>
+  <body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="all_about_you.html" class="current-page">Tell Me More</a></li>
+      </ul>
+    </nav>
+    <main>
+    <h1>All About You!</h1>
+    <!--Basic Personal Informatuon-->
+    <div class="form-input">
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" name="first-name" placeholder="Some">
+
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" name="last-name" placeholder="guy">
+
+        <label for="email">Email</label>
+        <input id="email" type="text" name="email" placeholder="Some@guy.com">
+
+        <label for="dob">Date of Birth</label>
+        <input type="date">
+    </div>
+    <br>
+    <!--How Much You Like Code?-->
+    <div>   
+        <label for="like_code">How Much Do You Like To Code?</label>
+        <input type="range">
+    </div>
+    <br>
+    <!--Skills-->
+    <div>
+    <label for="Skills">Skills(check any that apply)</label>
+    <input type="checkbox">HTML
+    <input type="checkbox">CSS
+    <input type="checkbox">Git   
+    </div>
+    <br>
+    <!--favorite language-->
+    <div>
+        <label for="Favorite_language">Favorite Language</label>
+        <select>
+            <option value>Select a language</option>
+            <option value="ruby">Ruby</option>
+            <option value="javascript">Javascript</option>
+            <option value="python">Python</option>
+        </select>
+    </div>
+    <br>
+    <!--favorite browse-->
+    <div>
+        <label for="favorite_browse">Favorite Browser</label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Safari">
+        </datalist>
+    </div>
+    <br>
+    <!--white space-->
+    <div>
+        <label for="white space">White Space:</label>
+        <input type="radio" name="white spaces" value="tabs"> Tabs
+        <input type="radio" name="white spaces" value="spaces" checked> Spaces
+    </div>
+    <br>
+    <!--How Many Spaces Should a Tab Represent?-->
+    <div>
+        <label for="tab_spaces">How Many Spaces Should a Tab Represent?</label>
+        <input type="number" id="my_number" min="1" step="1" value="2">    
+    </div>
+    <br>
+    <!--Favorite Web Color-->
+    <div>
+        <label for="favorite_color">Favorite Web Color</label>
+        <input type="color" name="favorite_color">
+    </div>
+    <br>
+    <!--buttons-->
+    <button type="submit">Send</button>
+    <input type="reset">
+  </main>
+  </body>
+  </html>
